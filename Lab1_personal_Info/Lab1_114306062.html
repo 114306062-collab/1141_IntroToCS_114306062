@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Simple Table</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    table { border-collapse: collapse; width: 100%; max-width: 780px; margin: 24px auto; }
+    td, th { border: 1px solid #999; padding: 8px; vertical-align: top; }
+    .center { text-align: center; }
+    img { display: block; }
+    .full { width: 100%; }
+  </style>
+</head>
+<body>
+<form action="mailto:114306062@g.nccu.edu.tw" method="post">
+    <table border="1">
+
+
+        <tr>
+            <td colspan="3" style="text-align:center;">About 114306062</td>
+        </tr>
+
+
+
+        <tr>
+            <td rowspan="3">
+                <img src="personal image.jpg" width="150" height="200"><b>
+                personal photo
+            </td>
+            <td colspan="2" >
+            Name: <input type="text" name="username"> <br>
+            Gender:
+            <input type="radio" name="gender" value="male">Male
+            <input type="radio" name="gender" value="female">Female
+            <input type="radio" name="gender" value="other">Other
+            </td>
+        </tr>
+
+
+        <tr>
+            <td>
+            <select name="county">
+            <option>Country : </option>
+            <option>Taipei</option>
+            <option>Taoyuan</option>
+            <option>Taichung</option>
+            <option>Tainan</option>
+            </select>
+            </td>
+            <td>
+                <label for="birthday">Birthday : </label>
+                <input type="date" id="birthday" name="birthday">
+
+            </td>
+        </tr>
+
+
+        <tr>
+            <td colspan="2" >
+                <label for="email"><strong>E-mail:</strong></label>
+                <input type="email" id="email" name="email" class="full" placeholder="114306062@g.nccu.edu.tw" required>
+        </td>
+            </td>
+        </tr>
+        <tr>
+            <td>Hobby</td>
+            <td colspan="2" >
+                <input type="checkbox" name="Hobby" value="Swimming">Swimming
+                <input type="checkbox" name="Hobby" value="Volleyball">Volleyball
+                <input type="checkbox" name="Hobby" value="Movie">Movie
+                <input type="checkbox" name="Hobby" value="Game">Game
+                <input type="checkbox" name="Hobby" value="Sleep">Sleep
+            </td>
+        </tr>
+        <tr>
+            <td>Skill</td>
+            <td colspan="2" >
+                <input type="checkbox" name="skill" value="Java">Java
+                <input type="checkbox" name="skill" value="HTML">HTML
+                <input type="checkbox" name="skill" value="Python">Python
+                <input type="checkbox" name="skill" value="Microsoft Office">Microsoft Office
+                <input type="checkbox" name="skill" value="Premiere">Premiere
+            </td>
+        </tr>
+        <tr>
+            <td>Saysomething</td>
+            <td colspan="2" ><input type="text" placeholder="Say something here" required name="Saysomething"> <br></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="text-align:center;" >
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </td>
+        </tr>
+    </table>
+   </form>
+</body>
+</html>
