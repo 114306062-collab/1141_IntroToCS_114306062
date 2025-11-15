@@ -1,0 +1,117 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1efdb;
+     color: #333333;
+}
+
+
+.hero {
+    background-color: #dfa73d;
+    color: #ffffff;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.hero h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+    font-family: "Trebuchet MS", Arial, sans-serif;
+}
+
+.hero p {
+    font-size: 20px;
+}
+
+/* 導覽列 */
+.navbar {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    background-color: #7e2d1e;
+    position: relative;
+}
+
+
+.navbar > li {
+    position: relative; 
+}
+
+.navbar > li > a {
+    display: block;
+    padding: 10px 40px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar > li > a:hover,
+.navbar > li:hover > a {
+    background-color: #3e160f;
+}
+
+/* 下拉選單區塊 */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 220px;
+    background-color: #7e2d1e;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    list-style: none;
+}
+
+.dropdown-content li a {
+    display: block;
+    padding: 12px 16px;
+    color: #ffffff;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.dropdown-content li a:hover {
+    background-color: #3e160f;
+}
+
+/* 滑過 Services 才顯示下拉 */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* 內文區塊 */
+.content {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 0 20px;
+    color: #333333;
+    font-size: 16px;
+}
+
+.content a {
+    color: #0056b3;
+    text-decoration: underline;
+}
+@media print {
+    body {
+        background-color: white; 
+        color: black;
+        font-size: 14pt;
+    }
+
+    .navbar {
+        display: none; 
+    }
+}
+@media all {
+    
+    .content {
+        line-height: 1.6;
+    }
+}
