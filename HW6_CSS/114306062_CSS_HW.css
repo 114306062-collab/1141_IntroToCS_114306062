@@ -1,0 +1,286 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #eeede1; 
+    font-family: Arial, "微軟正黑體", sans-serif;
+}
+
+/*  外層主容器  */
+.main-container {
+    width: 800px;         
+    min-height: 600px;     
+
+    display: flex;          
+    border-radius: 16px; 
+    background-color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+
+    overflow: hidden;   
+}
+
+/*  左右 Panel  */
+.left-panel {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    background-color: #54361a; 
+    color: #ffffff;
+}
+
+.right-panel {
+    width: 70%;
+    padding: 24px 32px;
+    background-color: #ebdfc0;  
+}
+
+/*  左邊：照片區  */
+.photo-panel {
+    padding: 16px;
+    text-align: center;
+}
+
+.photo-panel img {
+    width: 100%;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+/*  左邊：文字內容區  */
+.text-content {
+    padding: 16px 20px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+a {
+    color: #5a3d24;
+}
+
+a:hover {
+    color: #b95c2f;
+}
+.about-me h1 {
+    font-size: 22px;
+    margin-bottom: 8px;
+    color : #d7b78e
+}
+.about-me-subtitle {
+    color: #f5d9b0;
+    font-size: 13px;
+}
+.about-me h4 {
+    line-height: 2.2;
+   border-bottom: 1px solid #ccc;
+   color : #d7b78e
+}
+
+.about-me p {
+    font-size: 12px;
+    line-height: 1.2;
+    margin-top: 8px;
+}
+
+.contact-info h2 {
+    font-size: 16px;
+    margin-bottom: 8px;
+    border-bottom: 1px solid #ccc;
+    color : #d7b78e
+}
+
+.contact-info ul {
+    list-style: none;
+    font-size: 12px;
+    line-height: 1.2;
+}
+
+.contact-info li + li {
+    margin-top: 4px;
+}
+
+.contact-info a {
+    color: #ffd66b;  
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* 學校 Logo 區塊 */
+.school-logo {
+    margin-top: auto;    
+    text-align: center;
+    padding-top: 12px;
+}
+
+.school-logo img {
+    max-width: 60%;
+}
+
+/*  右邊：各 Section 共用樣式  */
+.section {
+    margin-bottom: 24px;
+}
+
+.section-title {
+    font-size: 20px;
+    margin-bottom: 8px;
+    padding-bottom: 4px;
+    border-bottom: 2px solid #ccc;  
+    color: #422b14;
+}
+
+/*  Education 區塊  */
+.education .edu-item {
+    display: flex;
+    gap: 12px;
+    margin-top: 8px;
+    font-size: 14px;
+    margin-top: 10px;
+    line-height: 1.6;
+}
+
+.education .year {
+    font-weight: bold;
+    min-width: 100px;
+    text-align: right;
+    padding-right: 8px; 
+}
+
+.education .description {
+    flex: 1;
+    text-align: left;
+}
+
+/*  Skill 區塊  */
+.skill-tags {
+    margin-top: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.tag {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 999px;        
+    background-color:#abb9a6 ;  
+    color: #54361a;
+    font-size: 13px;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+.tag:hover {
+    background-color: #c9ddc8; /* 稍微深一點 */
+    transform: translateY(-1px);
+}
+
+/*  Homework & Lab 區塊  */
+.hw-lab-container {
+    margin-top: 12px;
+    display: flex;
+    gap: 16px;
+}
+
+.hw-column,
+.lab-column {
+    flex: 1;
+    background-color:#d7b78e;
+    border-radius: 12px;
+    padding: 12px 14px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.hw-column h3,
+.lab-column h3 {
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.hw-column ul,
+.lab-column ul {
+    list-style-type: disc;   
+    padding-left: 20px;      
+    margin-left: 0;          
+    font-size: 14px;
+    text-align: left;        
+}
+
+.hw-column li + li,
+.lab-column li + li {
+    margin-top: 4px;
+    justify-content: center;
+}
+
+.hw-column a,
+.lab-column a {
+    text-decoration: none; 
+    color: #54361a;
+}
+
+.hw-column a:hover,
+.lab-column a:hover {
+    text-decoration: underline;
+}
+
+/*  Favorite Music 區塊  */
+.music-row {
+    margin-top: 12px;
+    display: flex;
+    gap: 16px;
+    justify-content: space-between;
+}
+
+.music-item {
+    flex: 1;
+    text-align: center;
+    text-decoration: none;
+    color: #54361a;     
+}
+
+.music-item img {
+    width: 60%;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-bottom: 8px;
+    margin-top: 8px;
+}
+
+.song-title {
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 0;
+    font-weight: 500;
+   
+}
+
+.song-title.tag {
+    display: inline-block;   
+    font-size: 13px;         
+    margin-top: 4px;          
+}
+
+.tag:hover {
+    background-color: #c9ddc8;
+    transform: translateY(-2px);
+    cursor: pointer;
+}
+
+/* 小小說明文字 */
+.music-note {
+    margin-top: 12px;
+    font-size: 13px;
+    line-height: 1.6;
+    color: #c5a557;
+    line-height: 1.7;
+}
