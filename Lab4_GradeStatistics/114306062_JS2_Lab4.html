@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Grade Statistics</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- 輸入區 -->
+  <input type="number" id="math" placeholder="Math">
+  <input type="number" id="english" placeholder="English">
+ <button type="button" id="submitBtn">Submit</button>
+
+
+  <!-- 表格 -->
+  <table id="gradeTable">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Math</th>
+        <th>English</th>
+        <th>Average</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- JS 動態加 row -->
+    </tbody>
+    <tfoot>
+      <tr>
+        <th>Average</th>
+        <th id="mathAvg">0</th>
+        <th id="engAvg">0</th>
+        <th id="overallAvg">0</th>
+      </tr>
+    </tfoot>
+  </table>
+
+  <script src="script.js"></script>
+</body>
+</html>
