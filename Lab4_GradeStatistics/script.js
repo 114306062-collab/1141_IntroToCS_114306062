@@ -49,3 +49,4 @@ function addRow(math, eng) {
   `;
   tbody.appendChild(tr);
 }
+if (mathInput.value === "" || engInput.value === "") return;
